@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row d-flex justify-content-center ">
+        <div class="col-6 bolder bolder-2 shadow rounded-3 p-2 ">
+            <div class="mb-3">
+                <label for="apellido" class="form-label">Nombre y Apellido</label>
+                <input type="text" class="form-control" [(ngModel)]="formularioAlumno.nombre" id="apellido" placeholder="Ingrese Nombre y Apellido">
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Telefono</label>
+                <input type="number" class="form-control" [(ngModel)]="formularioAlumno.numero" id="telefono" placeholder="Ingrese su numero">
+            </div>
+            <div class="mb-3">
+                <label for="curso" class="form-label">Nombre del Curso</label>
+                <input type="text" class="form-control" [(ngModel)]="formularioAlumno.curso" id="curso" placeholder="Ingrese Nombre del Curso">
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Ingrese su Gmail</label>
+                <input type="email" class="form-control" [(ngModel)]="formularioAlumno.gmail" id="correo" placeholder="Ingrese su Correo Electronico ">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Que espera del Curso</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary" (click)="guardar()">Guardar</button>
+            <button class="btn btn-danger" (click)="cancelar()">Cancelar</button>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,23 @@
+h3{
+    font-size: 1.17rem;
+    font-weight: bold;
+}
+
+.contenido-texto h3 span{
+    background: #09ac1e;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0,0, .5);
+    margin-right: 5px;
+}
+
+.para{
+    border-radius: 10px;
+    background-color: #dbdada;
+    
+}
