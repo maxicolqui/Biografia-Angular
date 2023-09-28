@@ -9,6 +9,8 @@ import { ErrorModule } from './error/error.module';
 import { MusicModule } from './music/music.module';
 import { AdmirationModule } from './admiration/admiration.module';
 import { CursosModule } from './cursos/cursos.module';
+import { RegistroService } from './services/registro.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,13 @@ import { CursosModule } from './cursos/cursos.module';
     ErrorModule,
     MusicModule,
     AdmirationModule,
-    CursosModule
+    CursosModule,
+    HttpClientModule
 
     
     
   ],
-  providers: [],
+  providers: [RegistroService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
