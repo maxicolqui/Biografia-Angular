@@ -19,7 +19,7 @@
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Que espera del Curso</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="formularioAlumno.descripcion" ></textarea>
             </div>
             <button class="btn btn-primary" (click)="guardar()">Guardar</button>
             <button class="btn btn-danger" (click)="cancelar()">Cancelar</button>

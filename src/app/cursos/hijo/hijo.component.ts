@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { RegistroService } from 'src/app/services/registro.service';
 
 @Component({
   selector: 'app-hijo',
@@ -15,9 +16,10 @@ export class HijoComponent implements OnInit {
     numero:null,
     curso:null,
     gmail:null,
+    descripcion:null,
   }
 
-  constructor(){
+  constructor(private registroServide: RegistroService){
 
   }
   
@@ -34,6 +36,7 @@ export class HijoComponent implements OnInit {
       numero:null,
       curso:null,
       gmail:null,
+      descripcion:null,
     }
 
     this.habilitarEmmitter.emit(false)

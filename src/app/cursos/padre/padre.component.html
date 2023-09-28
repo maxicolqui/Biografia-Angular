@@ -22,15 +22,17 @@
                       <th scope="col">Telefono</th>
                       <th scope="col">Curso</th>
                       <th scope="col">Gmail</th>
+                      <th scope="col">Descripcion</th>
                     </tr>
                   </thead>
                   <tbody class=" text-center">
-                    <tr *ngFor="let a of listaAlumno; let i = index" >
+                    <tr *ngFor="let a of listaRegistro; let i = index" >
                       <th scope="row">{{i}}</th>
                       <td>{{a.nombre}}</td>
                       <td>{{a.numero}}</td>
                       <td>{{a.curso}}</td>
                       <td>{{a.gmail}}</td>
+                      <td>{{a.descripcion}}</td>
                     </tr>
                   </tbody>
             </table>
