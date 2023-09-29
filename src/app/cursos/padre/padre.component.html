@@ -8,13 +8,13 @@
     
         <!-- Componente hijo -->
         <div class="col-12" *ngIf="habilitarForm==true" >
-            <app-hijo (formularioEmmitter)="obtenerAlumno($event)" 
+            <app-hijo (registro)="obtenerAlumno()" 
             (habilitarEmmitter)="getHabilitar($event)"></app-hijo>
         </div>
 
         <!-- Tabla de datos -->
         <div class="col-12 mt-4 ">
-            <table class="table table-striped "*ngIf="listaAlumno.length>0" >
+            <table class="table table-striped "*ngIf="listaRegistro.length>0" >
                 <thead>
                     <tr class=" text-center">
                       <th scope="col">#</th>
@@ -36,9 +36,6 @@
                     </tr>
                   </tbody>
             </table>
-            <div class="alert alert-danger" *ngIf="listaAlumno.length==0">
-                <p class=" text-center fs-4">No existen registros</p>
-            </div>
 
         </div>
     </div>

@@ -32,13 +32,15 @@ export class PadreComponent implements OnInit{
     this.habilitarForm=true;
   }
 
-  obtenerAlumno(alumno:any):void{
+  obtenerAlumno():void{
 
-    let nuevo = Object.assign({},alumno);
-    console.log("llego el alumno:",alumno);
-    //cargar en el array de alumnos
-    this.listaAlumno.push(nuevo);
-    console.log(this.listaAlumno)
+    this.registroServide.getAll().subscribe( response =>{
+      console.log('lista de Registro: ',response);
+      this.listaRegistro = response;
+      console.log("lista de registro del ts: ",this.listaRegistro)
+    }
+
+    )
 
 
   }
