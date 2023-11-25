@@ -1,1 +1,35 @@
-<p>alumnos works!</p>
+<div class="container">
+    <div class="row">
+        <!-- Tabla de datos -->
+        <section class=" w-50 mx-auto text-center pt-5 ">
+            <h1 class="p-3 fs-2 border-bottom border-3 mb-4">Alumnos <span class="text-primary">Inscriptos</span>
+            </h1>
+          </section>
+        <div class="col-12 mt-4 ">
+            <table class="table table-striped ">
+                <thead>
+                    <tr class=" text-center">
+                      <th scope="col">#</th>
+                      <th scope="col">Nombre y Apellido</th>
+                      <th scope="col">Telefono</th>
+                      <th scope="col">Curso</th>
+                      <th scope="col">Gmail</th>
+                      <th scope="col">Descripcion</th>
+                    </tr>
+                  </thead>
+                  <tbody class=" text-center">
+                    <tr *ngFor="let a of listaRegistro; let i = index" >
+                      <th scope="row">{{i}}</th>
+                      <td>{{a.nombre}}</td>
+                      <td>{{a.numero}}</td>
+                      <td>{{a.curso}}</td>
+                      <td>{{a.gmail}}</td>
+                      <td>{{a.descripcion}}</td>
+                    </tr>
+                  </tbody>
+            </table>
+
+        </div>
+    </div>
+    
+</div>

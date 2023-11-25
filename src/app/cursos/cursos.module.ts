@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { PadreComponent } from './padre/padre.component';
 import { HijoComponent } from './hijo/hijo.component';
+import { DatosModule } from '../datos/datos.module';
 
 
 
@@ -20,6 +21,7 @@ import { HijoComponent } from './hijo/hijo.component';
     AppRoutingModule,
     FormsModule,
     BrowserModule,
+    DatosModule
   ],
   exports:[
     HomeCComponent,
