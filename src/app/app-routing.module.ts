@@ -9,6 +9,8 @@ import { Pagina2Component } from './music/pagina2/pagina2.component';
 import { Pagina3Component } from './music/pagina3/pagina3.component';
 import { Pagina4Component } from './music/pagina4/pagina4.component';
 import { HomeCComponent } from './cursos/home-c/home-c.component';
+import { AlumnosComponent } from './datos/alumnos/alumnos.component';
+import { ContactosComponent } from './datos/contactos/contactos.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
@@ -20,6 +22,8 @@ const routes: Routes = [
   {path: 'pagina3', component: Pagina3Component},
   {path: 'pagina4', component: Pagina4Component},
   {path:'curso',component:HomeCComponent},
+  {path: 'alumnos',component:AlumnosComponent},
+  {path: 'contactos', component: ContactosComponent},
   {path: '**', component:NotfonComponent}
 ];
 

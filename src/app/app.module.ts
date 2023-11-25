@@ -11,6 +11,8 @@ import { AdmirationModule } from './admiration/admiration.module';
 import { CursosModule } from './cursos/cursos.module';
 import { RegistroService } from './services/registro.service';
 import { HttpClientModule } from '@angular/common/http';
+import { DatosModule } from './datos/datos.module';
+
 
 @NgModule({
   declarations: [
@@ -26,8 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
     MusicModule,
     AdmirationModule,
     CursosModule,
-    HttpClientModule
-
+    HttpClientModule,
+    DatosModule
     
     
   ],
