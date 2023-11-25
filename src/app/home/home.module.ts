@@ -5,7 +5,6 @@ import { SliderComponent } from './slider/slider.component';
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { RestoMiComponent } from './resto-mi/resto-mi.component';
 import { FooterComponent } from './footer/footer.component';
-import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { MusicModule } from '../music/music.module';
@@ -26,7 +25,6 @@ import { EquipoComponent } from './equipo/equipo.component';
   ],
   imports: [
     CommonModule,
-    SharedModule,
     MusicModule,
     AdmirationModule,
     AppRoutingModule
@@ -38,7 +36,7 @@ import { EquipoComponent } from './equipo/equipo.component';
     SobreMiComponent,
     RestoMiComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
   ]
 })
 export class HomeModule { }

@@ -4,6 +4,8 @@ import { FamilyComponent } from './family/family.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { MioComponent } from './mio/mio.component';
 import { VidaComponent } from './vida/vida.component';
+import { HomeModule } from '../home/home.module';
+import { AdmirationModule } from '../admiration/admiration.module';
 
 
 
@@ -15,7 +17,9 @@ import { VidaComponent } from './vida/vida.component';
     VidaComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HomeModule,
+    AdmirationModule
   ],
   exports:[
     FamilyComponent,
