@@ -9,8 +9,8 @@ export const listaMusica: Musica[]=[
 ];
 
 export const listaMateria: Materia[]=[
-    {id:1,titulo:'Python',dificultad:"Facil",imagen:'python.jpg'},
-    {id:2,titulo:'Java',dificultad:"Media",imagen:'java.png'},
+    {id:1,titulo:'Python',dificultad:"Facil",imagen:'python.png'},
+    {id:2,titulo:'Java',dificultad:"Media",imagen:'java.jpg'},
     {id:3,titulo:'PHP',dificultad:"Media",imagen:'php.png'},
     {id:4,titulo:'Xampp',dificultad:"Facil",imagen:'xampp.png'},
 

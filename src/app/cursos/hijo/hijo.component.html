@@ -10,8 +10,21 @@
                 <input type="number" class="form-control" [(ngModel)]="numero" id="telefono" placeholder="Ingrese su numero">
             </div>
             <div class="mb-3">
-                <label for="curso" class="form-label">Nombre del Curso</label>
-                <input type="text" class="form-control" [(ngModel)]="curso" id="curso" placeholder="Ingrese Nombre del Curso">
+                <label for="telefono" class="form-label">Eligir Curso</label>
+                <select class="form-select" aria-label="Default select example" [(ngModel)]="curso">
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Xampp">Xampp</option>
+                    <option value="Angular">Angular</option>
+                    <option value="Spring Boot">Spring Boot</option>
+                    <option value="MySQL">MySQL</option>
+                    <option value="SQL Server">SQL Server</option>
+                    <option value="Type Scrip">Type Scrip</option>
+                    <option value="GitHub">GitHub</option>
+                    <option value="Html-Css-Js">Html-Css-Js</option>
+                    <option value="Office">Office</option>
+                  </select>
             </div>
             <div class="mb-3">
                 <label for="correo" class="form-label">Ingrese su Gmail</label>
