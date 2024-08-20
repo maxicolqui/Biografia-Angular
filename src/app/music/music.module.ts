@@ -7,6 +7,7 @@ import { PaginaComponent } from './pagina/pagina.component';
 import { Pagina2Component } from './pagina2/pagina2.component';
 import { Pagina3Component } from './pagina3/pagina3.component';
 import { Pagina4Component } from './pagina4/pagina4.component';
+import { MusicComponent } from './music/music.component';
 
 
 
@@ -18,6 +19,7 @@ import { Pagina4Component } from './pagina4/pagina4.component';
     Pagina2Component,
     Pagina3Component,
     Pagina4Component,
+    MusicComponent,
   ],
   imports: [
     CommonModule,

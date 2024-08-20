@@ -11,17 +11,19 @@ import { Pagina4Component } from './music/pagina4/pagina4.component';
 import { HomeCComponent } from './cursos/home-c/home-c.component';
 import { AlumnosComponent } from './datos/alumnos/alumnos.component';
 import { ContactosComponent } from './datos/contactos/contactos.component';
+import { GalleryComponent } from './shared/gallery/gallery.component';
+import { MusicComponent } from './music/music/music.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
   {path: 'home', component: HomeComponent },
   {path: 'vida', component: VidaComponent},
-  {path: 'musica', component: AlbumComponent},
+  {path: 'musica', component: MusicComponent},
   {path: 'pagina', component: PaginaComponent},
   {path: 'pagina2', component: Pagina2Component},
   {path: 'pagina3', component: Pagina3Component},
   {path: 'pagina4', component: Pagina4Component},
-  {path:'curso',component:HomeCComponent},
+  {path:'galeria',component:GalleryComponent},
   {path: 'alumnos',component:AlumnosComponent},
   {path: 'contactos', component: ContactosComponent},
   {path: '**', component:NotfonComponent}
